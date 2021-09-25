@@ -1,0 +1,11 @@
+.page-header{
+    width: 100%;
+    background: black;
+    padding: 20px;
+    display: flex;
+    position: fixed;
+    color: white;
+    z-index: 10;
+    justify-content: space-between;
+}
+
