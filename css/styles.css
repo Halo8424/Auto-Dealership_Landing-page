@@ -9,3 +9,8 @@
     justify-content: space-between;
 }
 
+.page-header__nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
