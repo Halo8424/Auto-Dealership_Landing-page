@@ -20,3 +20,7 @@
     height: 100vh;
     background: #1b1b1b;
 }
+
+.jumbo-slider__container{
+    position: relative;
+}
