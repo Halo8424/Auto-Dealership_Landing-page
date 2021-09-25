@@ -41,6 +41,10 @@
     text-decoration: none;
 }
 
+.jumbo-slider__link--active{
+    color:#03fc7f;
+}
+
 .jumbo-slider__elipsis{
     width: 100px;
     height: 100vh;
