@@ -15,18 +15,20 @@ let highLightFirstLink = ()=>{
     jumboSliderNavLinksArry[activeSlide-1].classList.add("jumbo-slider__link--active");
 };
 
+let updateNavOnSlideChange = () => {
+    console.log(`Current: ${activeSlide}`);
+};
+
 let init = () =>{
     loadFirstSlide();
     highLightFirstLink();
-    
+    updateNavOnSlideChange();
 
-    // let updateNav = () => {
-    //     console.log(`Current: ${activeSlide}`);
-    // };
+    
 
     // let startSlider = () => {
 
     // };
 };
 
-init();
+// init();
