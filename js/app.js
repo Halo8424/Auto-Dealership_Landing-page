@@ -11,10 +11,14 @@ let loadFirstSlide = ()=>{
     jumboSliderSlidesArry[0].classList.add("jumbo-slider__slide--active");
 };
 
+let highLightFirstLink = ()=>{
+    jumboSliderNavLinksArry[activeSlide-1].classList.add("jumbo-slider__link--active");
+};
+
 let init = () =>{
     loadFirstSlide();
-
-    // jumboSliderNavLinksArry[activeSlide-1].classList.add("jumbo-slider__link--active");
+    highLightFirstLink();
+    
 
     // let updateNav = () => {
     //     console.log(`Current: ${activeSlide}`);
@@ -25,4 +29,4 @@ let init = () =>{
     // };
 };
 
-// init();
+init();
