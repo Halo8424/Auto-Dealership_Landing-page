@@ -9,4 +9,4 @@ let init = () =>{
     jumboSliderSlidesArry[0].classList.add("jumbo-slider__slide--active");
 };
 
-init();
+// init();
