@@ -22,19 +22,26 @@ let highLightFirstLink = () => {
   );
 };
 
-let updateNavOnSlideChange = () => {
+let updateNavOnSlideChange = (activeSlide) => {
   console.log(`Current: ${activeSlide}`);
+
 };
 
+let deactivateFirstSlide = ()=>{jumboSliderSlidesArry[0].classList.remove("jumbo-slider__slide--active")};
 
+let activateSecoundSlide = ()=>{jumboSliderSlidesArry[1].classList.add("jumbo-slider__slide--active")};
 
 let startSlider = () => {  
   setInterval(() => {
    console.log(`Current: ${activeSlide}`)
-   jumboSliderSlidesArry[1].classList.add("jumbo-slider__slide--active")
-   jumboSliderSlidesArry[0].classList.remove("jumbo-slider__slide--active")
+   deactivateFirstSlide();
+   activateSecoundSlide();
    
-
+   
+    if(activeSlide < jumboSliderSlidesArry.length){
+        activeSlide++;
+        updateNavOnSlideChange(activeSlide);
+    }
    
   }, 6000)
 };
@@ -47,4 +54,4 @@ let init = () => {
 
 };
 
-init();
+// init();
