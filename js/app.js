@@ -7,6 +7,8 @@ let init = () =>{
     slideRunTime = 6000;
 
     jumboSliderSlidesArry[0].classList.add("jumbo-slider__slide--active");
+
+    jumboSliderNavLinksArry[activeSlide-1].classList.add("jumbo-slider__link--active");
 };
 
-// init();
+init();
