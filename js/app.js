@@ -26,11 +26,16 @@ let updateNavOnSlideChange = () => {
   console.log(`Current: ${activeSlide}`);
 };
 
-let startSlider = () => {
-    let test = 1;
+
+
+let startSlider = () => {  
   setInterval(() => {
-    console.log(test);
-    test++;
+   console.log(`Current: ${activeSlide}`)
+   jumboSliderSlidesArry[1].classList.add("jumbo-slider__slide--active")
+   jumboSliderSlidesArry[0].classList.remove("jumbo-slider__slide--active")
+   
+
+   
   }, 6000)
 };
 
@@ -40,9 +45,6 @@ let init = () => {
   updateNavOnSlideChange();
   startSlider();
 
-  // let startSlider = () => {
-
-  // };
 };
 
-// init();
+init();
