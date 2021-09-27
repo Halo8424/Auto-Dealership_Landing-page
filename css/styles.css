@@ -24,6 +24,11 @@
 .jumbo-slider__container {
   position: relative;
 }
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
 
 .jumbo-slider__slide {
   width: 100%;
@@ -66,7 +71,8 @@
   opacity: 0;
   transform: translate3d(0, 100px, 0);
   transition: transform .4s ease-in-out 1s, opacity .4s ease-in-out 1s;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
+  margin: 2rem 0;
 }
 
 .jumbo-slider__title {
