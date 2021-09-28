@@ -78,4 +78,4 @@ let init = () => {
   startSlider();
 };
 
-// init();
+init();
