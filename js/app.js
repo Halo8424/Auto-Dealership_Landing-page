@@ -9,7 +9,7 @@ let container = document.getElementsByClassName("jumbo-slider__container")[0],
   jumboSliderNavLinksArry =
     document.getElementsByClassName("jumbo-slider__link"),
   activeSlide = 1,
-  slideRunTime = 6000;
+  slideRunTime = 8000;
 
 // Functions
 
@@ -69,7 +69,7 @@ let startSlider = () => {
 
     container.appendChild(jumboSliderSlidesArry[0].cloneNode([true]));
     container.removeChild(jumboSliderSlidesArry[0]);
-  }, 8000);
+  }, slideRunTime);
 };
 
 let init = () => {
