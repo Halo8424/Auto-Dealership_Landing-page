@@ -69,7 +69,7 @@ let startSlider = () => {
 
     container.appendChild(jumboSliderSlidesArry[0].cloneNode([true]));
     container.removeChild(jumboSliderSlidesArry[0]);
-  }, 6000);
+  }, 8000);
 };
 
 let init = () => {

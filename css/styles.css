@@ -172,7 +172,7 @@
     height: 5px;
     width: 0;
     background: #fff;
-    transition: width 6s ease-in-out;
+    transition: width 8s ease-in-out;
 }
 
 .jumbo-slider__slide--active .jumbo-slider__line{
