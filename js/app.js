@@ -24,15 +24,16 @@ let highLightFirstLink = () => {
 
 let deactivateFirstSlide = ()=>{jumboSliderSlidesArry[0].classList.remove("jumbo-slider__slide--active")};
 
-let activateSecoundSlide = ()=>{jumboSliderSlidesArry[1].classList.add("jumbo-slider__circle--filled")};
+let activateSecoundSlide = ()=>{jumboSliderSlidesArry[1].classList.add("jumbo-slider__slide--active")};
 
 let updateNavOnSlideChange = (activeSlide) => {
   console.log(`Current: ${activeSlide}`);
   for(let i = 0; i < jumboSliderSlidesArry.length; i++){
     jumboSliderNavLinksArry[i].classList.remove("jumbo-slider__link--active");
-    jumboSliderElipsisCirclesArry[i].classList.remove("jumbo-slider__link--active");
+    jumboSliderElipsisCirclesArry[i].classList.remove("jumbo-slider__circle--filled");
   }
-  jumboSliderNavLinksArry[activeSlide-1]
+  jumboSliderNavLinksArry[activeSlide-1].classList.add("jumbo-slider__link--active");
+  jumboSliderElipsisCirclesArry[activeSlide-1].classList.add("jumbo-slider__circle--filled");
 };
 
 
@@ -57,9 +58,9 @@ let startSlider = () => {
 let init = () => {
   loadFirstSlide();
   highLightFirstLink();
-  updateNavOnSlideChange();
+//   updateNavOnSlideChange();
   startSlider();
 
 };
 
-// init();
+init();
