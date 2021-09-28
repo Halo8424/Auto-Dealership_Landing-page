@@ -49,7 +49,7 @@ let startSlider = () => {
    
     if(activeSlide < jumboSliderSlidesArry.length){
         activeSlide++;
-        // updateNavOnSlideChange(activeSlide);
+        updateNavOnSlideChange(activeSlide);
     } else{
         activeSlide = 1
     };
