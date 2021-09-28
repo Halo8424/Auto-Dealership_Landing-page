@@ -49,8 +49,13 @@ let startSlider = () => {
    
     if(activeSlide < jumboSliderSlidesArry.length){
         activeSlide++;
-        updateNavOnSlideChange(activeSlide);
-    }
+        // updateNavOnSlideChange(activeSlide);
+    } else{
+        activeSlide = 1
+    };
+
+    container.appendChild(jumboSliderSlidesArry[0].cloneNode([true]));
+    container.removeChild(jumboSliderSlidesArry[0]);
    
   }, 6000)
 };
@@ -63,4 +68,4 @@ let init = () => {
 
 };
 
-init();
+// init();
