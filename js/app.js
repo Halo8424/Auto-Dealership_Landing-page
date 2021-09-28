@@ -56,7 +56,6 @@ let updateNavOnSlideChange = (activeSlide) => {
 
 let startSlider = () => {
   setInterval(() => {
-    console.log(`Current: ${activeSlide}`);
     deactivateFirstSlide();
     activateSecoundSlide();
 
@@ -79,4 +78,4 @@ let init = () => {
   startSlider();
 };
 
-init();
+// init();
