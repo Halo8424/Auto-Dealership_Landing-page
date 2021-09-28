@@ -22,14 +22,22 @@ let highLightFirstLink = () => {
   );
 };
 
-let updateNavOnSlideChange = (activeSlide) => {
-  console.log(`Current: ${activeSlide}`);
-
-};
-
 let deactivateFirstSlide = ()=>{jumboSliderSlidesArry[0].classList.remove("jumbo-slider__slide--active")};
 
-let activateSecoundSlide = ()=>{jumboSliderSlidesArry[1].classList.add("jumbo-slider__slide--active")};
+let activateSecoundSlide = ()=>{jumboSliderSlidesArry[1].classList.add("jumbo-slider__circle--filled")};
+
+let updateNavOnSlideChange = (activeSlide) => {
+  console.log(`Current: ${activeSlide}`);
+  for(let i = 0; i < jumboSliderSlidesArry.length; i++){
+    jumboSliderNavLinksArry[i].classList.remove("jumbo-slider__link--active");
+    jumboSliderElipsisCirclesArry[i].classList.remove("jumbo-slider__link--active");
+  }
+  jumboSliderNavLinksArry[activeSlide-1]
+};
+
+
+
+
 
 let startSlider = () => {  
   setInterval(() => {
