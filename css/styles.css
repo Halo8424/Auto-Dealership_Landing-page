@@ -180,4 +180,21 @@
     background: #03fc7f;
 } 
 
+/* @Media */
+
+@media only screen and (max-width: 600px) {
+
+  .page-header{
+    
+    padding: 10px;
+  }  
+
+  .page-header__logo{
+    display: none;
+  }
+
+  .page-header__nav a {
+    padding: 0 5px;
+  }
+}
 
