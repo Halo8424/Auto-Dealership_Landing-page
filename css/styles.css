@@ -196,5 +196,33 @@
   .page-header__nav a {
     padding: 0 5px;
   }
+
+  .jumbo-slider__slide-number{
+    font-size: 11rem;
+    margin: 1rem 3rem;
+
+  }
+
+  .jumbo-slider__title{
+    font-size: 1rem;
+    margin-top: .5rem;
+  }
+
+  .jumbo-slider__description{
+   max-width: 300px;
+  }
+
+  .jumbo-slider__elipsis{
+    width: 50px;
+    height: 77vh;
+  }
+  .jumbo-slider__circle{
+    width: 15px;
+    height: 15px;
+  }
+
+  .jumbo-slider__link{
+    font-size: 1rem;
+  }
 }
 
